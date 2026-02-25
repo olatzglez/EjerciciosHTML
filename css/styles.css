@@ -1,0 +1,67 @@
+
+
+:root {
+    --color-principal: #red;
+    --color-secundario: #blue;
+    --bg-light: #white;
+    --bg-dark: #black;
+    --font-family: 'Oswald', Arial, sans-serif;
+
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size:2rem;
+    line-height: 2.25em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 2.25em;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2.25em;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 2.25em;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: 2.1.188;
+    font-weight: 800;
+
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.188em;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.188em;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 0.25em
+}
+
