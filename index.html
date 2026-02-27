@@ -5,127 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>FindAGroupie</title>
 </head>
-    <body>
-        <header>
-            <nav>
-                <h1 class="titulo-principal h1">FindAGroupie</h1>
+    <body class="light-mode">
+        <header class="header">
+            <nav class="main-menu">
+                <h1 class="main-title h1">Find A Groupie</h1>
                 <ul class="nav-list">
-                    <li><a href="/Eventos" target="_blank" aria-label="Eventos">Eventos</a></li>
-                    <li><a href="/Grupos" target="_blank" aria-label="Grupos">Grupos</a></li>
-                    <li><a href="/Fans" target="_blank" aria-label="Fans">Fans</a></li>
-                    <li><a href="/Artistas" target="_blank" aria-label="Artistas">Artistas</a></li>
-                    <li><a href="#" target="_blank" aria-label="Idioma">Idioma</a>
-                        <ul>
-                            <li><a href="#" aria-label="Castellano">Castellano</a></li>
-                            <li><a href="#" aria-label="Euskera">Euskera</a></li>
-                            <li><a href="#" aria-label="Inglés">Inglés</a></li>
-                        </ul>
+                    <li class="list-item nav-list-item"><a class="" href="/Eventos" target="_blank" aria-label="Eventos">Eventos</a></li>
+                    <li class="list-item nav-list-item"><a class="" href="/Grupos" target="_blank" aria-label="Grupos">Grupos</a></li>
+                    <li class="list-item nav-list-item"><a class="" href="/Fans" target="_blank" aria-label="Fans">Fans</a></li>
+                    <li class="list-item nav-list-item"><a class="" href="/Artistas" target="_blank" aria-label="Artistas">Artistas</a></li>
+                    <li class="list-item nav-list-item">
+                        <label for="idioma" class="label">Idioma</label>
+                        <select name="idioma" id="idioma" class="select select-idioma">
+                            <option class="option select-option" value="castellano">Castellano</option>
+                            <option class="option select-option" value="euskera">Euskera</option>
+                            <option class="option select-option" value="English">English</option>
+                        </select>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class="container-btn">
+            <section class="container">
                 <h2 class="titulo-secundario h2">Descubre algo</h2>
-                <ul class="button-list">
-                    <li><button type="button" class="secondary-btn">Encuentra conciertos</button></li>
-                    <li><button type="button" class="secondary-btn">Encuentra tu grupo</button></li>
-                    <li><button type="button" class="secondary-btn">Artistas cerca de mí</button></li>
-                </ul>
-            </section>
-
-            <section>
-                <h2 class="titulo-secundario h2">conciertos cerca de ti</h2>
-
-                <ul>
-                    <li>
-                        <div class="card">
-                            <picture>
-
-                            </picture>
-                            <a href="#" target="_blank" rel="">Bad Bunny</a>
-                        </div>
+                <ul class="btn-list">
+                    <li class="list-item">
+                        <button type="button" class="btn secondary-btn">Encuentra conciertos</button>
                     </li>
-                    <li>
-                        <div class="card">
-                            <picture>
-
-                            </picture>
-                             <a href="#" target="_blank" rel="">Megadeth</a>
-                        </div>
+                    <li class="list-item">
+                        <button type="button" class="btn secondary-btn">Encuentra tu grupo</button>
                     </li>
-                    <li>
-                        <div class="card">
-                            <picture>
-
-                            </picture>
-                             <a href="#" target="_blank" rel="">La La Love You</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-                            <picture>
-
-                            </picture>
-                             <a href="#" target="_blank" rel="">Amaral</a>
-                        </div>
+                    <li class="list-item">
+                        <button type="button" class="btn secondary-btn">Artistas cerca de mí</button>
                     </li>
                 </ul>
             </section>
 
-            <section>
-                <h2 class="titulo-secundario h2">Artistas cerca de ti</h2>
+            <section class="container conciertos">
+                <div class="title_input">
+                    <h2 class="titulo-secundario h2">Conciertos cerca de ti</h2>
 
-                <ul>
-                    <li>
-                        <div class="card">
-                            <picture class="card-picture">
+                    <label for="buscar-conciertos" class="label">Encuentra tus artistas</label>
+                    <input type="search" name="buscar-artistas" id="buscar-artistas" placeholder="Buscar artistas" class="input">
+                </div>
 
-                            </picture>
-                            <a href="#" target="_blank" rel="">Zea Mays</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card" >
-                            <picture class="card-picture">
-                                <source media="(min-width: )" srcset="" sizes="">
-                                <img class="card-picture-img" alt="" sizes="" srcset="">
-                            </picture>
-                             <a href="#" target="_blank" rel="">Bad Gyal</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-                            <picture class="card-picture">
-                                <source media="(min-width: )" srcset="" sizes="">
-                                <img class="card-picture-img" src="" alt="" sizes="" srcset="">
-                            </picture>
-                             <a href="#" target="_blank" rel="">La La Love You</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-                            <picture class="card-picture">
-                                <source media="(min-width: )" srcset="" sizes="">
-                                <img class="card-picture-img" src="" alt="" sizes="" srcset="">
-                            </picture>
-                             <a href="#" target="_blank" rel="">Baiuca</a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="grid-container">
+                    <ul class="list card-list">
+                        <li class="list-item">
+                            <div class="card">
+                                <picture class="card-picture">
+                                    <source media="(min-width: )" srcset="" sizes="">
+                                    <img class="card-picture-img" alt="Imagen de la artista" sizes="" srcset="https://los40.com/resizer/v2/WIAQXP6RC5A4JDEUZ7XNDX2Z3Y.jpg?auth=a457b09989944e7d926a126999de23e8729b924f28c08e0efac07cdb439b4f2a">
+                                </picture>
+                                <a class="" href="#" target="_blank" rel="">Bad Gyal</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list card-list">
+                        <li class="list-item">
+                            <div class="card">
+                                <picture class="card-picture">
+                                    <source media="(min-width: )" srcset="" sizes="">
+                                    <img class="card-picture-img" src="" alt="" sizes="" srcset="">
+                                </picture>
+                                <a class="" href="#" target="_blank" rel="">La La Love You</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list card-list">    
+                        <li class="list-item">
+                            <div class="card">
+                                <picture class="card-picture">
+                                    <source media="(min-width: )" srcset="" sizes="">
+                                    <img class="card-picture-img" src="" alt="" sizes="" srcset="">
+                                </picture>
+                                <a class="" href="#" target="_blank" rel="">Baiuca</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list card-list">    
+                        <li class="list-item">
+                            <div class="card">
+                                <picture class="card-picture">
+                                    <source media="(min-width: )" srcset="" sizes="">
+                                    <img class="card-picture-img" src="" alt="" sizes="" srcset="">
+                                </picture>
+                                <a class="" href="#" target="_blank" rel="">Baiuca</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <a href="/conciertos" target="_blank" rel="" class="">Ver todos los conciertos</a>
+            </section>
+
+            <section class="container">
+                <div class="title_input">
+                    <h2 class="titulo-secundario h2">Artistas cerca de ti</h2>
+                    
+                    <label for="buscar-conciertos" class="label">Encuentra tus conciertos</label>
+                    <input type="search" name="buscar-conciertos" id="buscar-conciertos" placeholder="Buscar conciertos" class="input">
+                </div>
+
+                <div class="grid-container">
+                    <ul class="list card-list">
+                        <li class="list-item">
+                            <div class="card">
+                                <picture class="card-picture">
+
+                                </picture>
+                                <a class="" href="#" target="_blank" rel="">Zea Mays</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list card-list">
+                        <li class="list-item">
+                            <div class="card">
+                                <picture class="card-picture">
+
+                                </picture>
+                                <a class="" href="#" target="_blank" rel="">Zea Mays</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list card-list">
+                        <li class="list-item">
+                            <div class="card">
+                                <picture class="card-picture">
+
+                                </picture>
+                                <a class="" href="#" target="_blank" rel="">Zea Mays</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list card-list">
+                        <li class="list-item">
+                            <div class="card">
+                                <picture class="card-picture">
+
+                                </picture>
+                                <a class="" href="#" target="_blank" rel="">Zea Mays</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="" href="/artistas" target="_blank" rel="">Ver todos los artistas</a>
             </section>
         </main>
         <footer class="footer">
-            <nav>
+            <nav class="nav-list">
+                <span>Find A Groupie 2026</span> 
                 <ul class="nav-list footer-list">
-                    <li><a href="#" target="_blank">Quiénes somos</a></li>
-                    <li><a href="#" target="_blank">Contacto</a></li>
-                    <li><a href="#" target="_blank">Legal</a></li>
-                    <li><a href="#" target="_blank">Cookies</a></li>
+                    <li class="list-item footer-list-item"><a class="" href="#" target="_blank">Quiénes somos</a></li>
+                    <li class="list-item footer-list-item"><a class="" href="#" target="_blank">Contacto</a></li>
+                    <li class="list-item footer-list-item"><a class="" href="#" target="_blank">Legal</a></li>
+                    <li class="list-item footer-list-item"><a class="" href="#" target="_blank">Cookies</a></li>
                 </ul>
             </nav>
         </footer>
