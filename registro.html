@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="http://127.0.0.1:5500/css/styles.css?_cacheOverride=1772286299751">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section class="registro">
+                <header class="registro-header">
+                    <h1>Concertly</h1>
+                    <h2>Registro en Concertly</h2>
+                    <a class="" href="index.html" target="_blank" aria-label="Volver al Inicio">← Volver al Inicio</a>
+                </header>
+
+                <form action="#" method="post" class="form-registro">
+
+                    <fieldset class="form-group">
+                        <legend class="legend">Datos personales</legend>
+
+                        <div class="form-group">
+                        <label for="nombre" class="label">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="input" required>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="apellidos" class="label">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" class="input" required>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="email" class="label">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required class="input">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="edad" class="label">Edad</label>
+                        <input type="number" id="edad" name="edad" min="18" max="100" class="input" required>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="telefono" class="label">Número de teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="input">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="ciudad" class="label">Ciudad</label>
+                        <input type="text" id="ciudad" name="ciudad" class="input">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="pais" class="label">País</label>
+                        <input type="text" id="pais" name="pais" class="input">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="codigo-postal" class="label">Código postal</label>
+                        <input type="text" id="codigo-postal" name="codigo_postal" class="input">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend class="legend">Géneros musicales y artistas favoritos</legend>
+
+                        <div>
+                            <input type="checkbox" id="rock" name="generos" value="rock" class="input">
+                            <label for="rock" class="label">Rock</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="pop" name="generos" value="pop" class="input">
+                            <label for="pop" class="label">Pop</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="urbano" name="generos" value="urbano" class="input">
+                            <label for="urbano" class="label">Urbano</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="metal" name="generos" value="metal" class="input">
+                            <label for="metal" class="label">Metal</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="electronica" name="generos" value="electronica" class="input">
+                            <label for="electronica" class="label">Electrónica</label>
+
+                            <div class="form-group">
+                                <label for="artistas" class="label">Artistas favoritos</label>
+                                <input type="text" id="artistas" name="artistas" class="input">
+                            </div>
+                    </fieldset>
+
+                    <div class="form-group btn-list">
+                        <button type="button" class="btn secondary-btn">Cancelar</button>
+                        <button type="submit" class="btn primary-btn btn-submit">Registrarme</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
