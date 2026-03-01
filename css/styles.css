@@ -1,7 +1,4 @@
 :root {
-    /*
-    --color-principal: #red;
-    --color-secundario: #blue; */
     --font-family: 'Oswald', Arial, sans-serif;
     --text-normal: 1rem;
     --font-size-14: 0.875rem;
@@ -10,9 +7,10 @@
     --dark-blue: #091926;
     --blue: #03658C;
     --light-blue: #05C7F2;
-    --dark-green: #038C7F;
-    --light-green: #04BFAD;
-    --white: #FFFFFF;
+    --dark-orange: #F24405;
+    --orange: #F25C05;
+    --light-orange: #F27405;
+    --white: #F5F5F5;
     --black: #000000;
 
     /* ALTURAS Y ANCHURAS */
@@ -51,18 +49,19 @@
     --card-widht: 200px;
     
     /* ENLACES */
-
-
+    --link-color:var(--light-blue);
+    --link-color-hover:var(--dark-orange);
+    
     /* BOTONES */
     --btn-heigth: 40px;
     --btn-border-radius: 8px; 
-    --bg-btn-primary:#03658C;
-    --btn-border-primary: 1px solid #03658C;
-    --btn-text-primary: #091926;
-    --bg-btn-secondary: #F5F5F5;
-    --btn-border-secondary: 1px solid #03658C;
-    --btn-text-secondary: #091926;
-}
+    --bg-btn-primary: var(--orange);
+    --btn-border-primary: 1px solid var(--orange);
+    --btn-text-primary: var(--black);
+    --bg-btn-secondary: var(--blue);
+    --btn-border-secondary: 1px solid var(--blue);
+    --btn-text-secondary: var(--black);
+}      
 
 /* ESTILOS GENERALES */
 
@@ -84,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.15rem;
     line-height: 1em;
     color: var(--light-blue);
     margin: 0;
@@ -157,21 +156,16 @@ ul.list.card-list {
 /* ENLACES */
 
 a {
-    color: var(--light-blue);
+    color: var(--link-color);
     text-decoration: none;
     font-size: 1rem;
     line-height: 0.25em
-
 }
 
 a:hover, a:focus {
     text-decoration: underline;
-    color: var(--white);
+    color: var(--link-color-hover);
     transition: all ease 0.9;
-}
-
-.light-mode a {
-    color: var(--link-color);
 }
 
 /* CABECERA Y MENÚ */
@@ -260,7 +254,7 @@ a:hover, a:focus {
     &:hover {
         
         transform: scale(1.05);
-        border-color: var(--light-blue);
+        border-color: var(--orange);
 
     }
 }
@@ -292,7 +286,11 @@ a:hover, a:focus {
     justify-content: center;
     font-family: var(--font-family);
     font-size: var(--text-normal);
-    min-width: 40px;
+    min-width: var(--btn-min-widht);
+    min-height: var(--btn-min-height);
+    padding: var(--btn-padding);
+    border: 1px solid;
+    border-radius: var(--btn-border-radius);
 }
 
 .btn-list {
@@ -306,18 +304,19 @@ a:hover, a:focus {
 .btn.primary-btn {
     background-color: var(--bg-btn-primary);
     padding: var(--btn-padding);
-    color: var(--white);
+    color: var(--black);
     border: var(--btn-border-primary);
     border-radius: var(--btn-border-radius);
 
     &:hover, &:focus {
-        background-color: var(--dark-blue);
-        color: var(--white);
+        background-color: var(--dark-orange);
+        color: var(--black);
         transition: all ease 0.8;
+        border-color: var(--dark-orange);
     }
 }
 
-.header .btn.primary-btn {
+.header .btn {
     height: var(--spacing-40);
     margin-right: 0;
 }
@@ -331,7 +330,7 @@ a:hover, a:focus {
 
     &:hover, &:focus {
         background-color: var(--bg-btn-primary);
-        color: var(--white);
+        color: var(--black);
         transition: ease all 0.8;
     }
 }
@@ -342,13 +341,25 @@ a:hover, a:focus {
     font-weight: var(--bold);
 }
 
+.btn.terciary-btn {
+    background-color:var(--orange);
+    color: var(--black);
+
+    &:hover, &:focus {
+        background-color: var(--dark-orange);
+        color: var(--white);
+        transition: ease all 0.8;
+    }
+}
+
+
 /* INPUTS */
 
 .input {
     height: 40px;
     min-width: 40px;
     width: 100%;
-    border: 1px solid var(--bg-btn-primary);
+    border: 1px solid var;
     border-radius: 8px; /* Hacer una variable del border-radius de los inputs */
     font-family: var(--font-family);
     font-size: var(--text-normal);
@@ -414,11 +425,11 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     padding: 0 var(--spacing-16);
-    border: 1px solid var(--bg-header-dark-color);
+    border: 1px solid var(--orange);
     border-radius: 0 var(--spacing-4) var(--spacing-4) 0;
     border-left: 0;
-    background-color: var(--blue);
-    color: var(--bg-light-color);
+    background-color: var(--orange);
+    color: var(--black);
     cursor: pointer;
 }
 
@@ -487,7 +498,7 @@ ul.nav-list.footer-list {
   .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-16));
+        gap: var(--spacing-16);
   }
 }
 
