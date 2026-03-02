@@ -1,31 +1,38 @@
-<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de Jone</title>
-    <link rel="stylesheet" href="http://127.0.0.1:5500/css/styles.css?_cacheOverride=1772286299751">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil de Jone</title>
+        <link rel="stylesheet" href="http://127.0.0.1:5500/css/styles.css?_cacheOverride=1772482580743"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&amp;display=swap&amp;_cacheOverride=1772482580743" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap&amp;_cacheOverride=1772482580744" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon//apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon//favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
 
     <main class="profile">
 
         <header class="header profile-header">
             <h1 class="h1 profile-title">Perfil</h1>
-            <button class="btn primary-btn btn-edit">Editar</button>
+            <button class="btn btn-primary btn-edit">Editar</button>
         </header>
 
         <section class="container user-info">
             <img src="/assets/img/avatar.jpg" alt="Foto de perfil" class="user-avatar">
-            
             <div class="user-data">
                 <h2 class="h2 user-name">Jone A</h2>
                 <p class="user-username">@joneaaa</p>
@@ -43,32 +50,64 @@
             </ul>
         </section>
 
-        <section class=" container tabs">
-            <button class="tab active">Conciertos</button>
-            <button class="tab">Personas afines</button>
-        </section>
+        <section class="container tabs">
+            <a href="#conciertos" class="btn btn-primary">Conciertos</a>
+            <a href="#fans" class="btn btn-secondary">Fans</a>
+        </section><section class="container concerts">
 
-        <section class="container concerts">
-
-            <article class="card concert-card">
+            <h3 id="conciertos" class="h3">Conciertos</h3>
+        <section class="grid-container">
+        <article class="card concert-card">
                 <img src="img/concert1.jpg" alt="Megadeth" class="concert-img">
                 
                 <div class="concert-info">
-                    <h4 class="h4 concert-title">Megadeth</h4>
-                    <p class="concert-date">29 de mayo de 2026</p>
+                    
+                    <h4 class="h4 concert-title">Megadeth</h4><p class="concert-date">29 de mayo de 2026</p>
                     <p class="concert-location">
                         Bizkaia Arena BEC, Barakaldo
                     </p>
 
                     <div class="concert-actions">
-                        <button class="btn primary-btn btn-interest">Me interesa</button>
-                        <button class="btn secondary-btn btn-share">Compartir</button>
+                        <button class="btn btn-primary btn-interest">Me interesa</button>
+                        <button class="btn btn-secondary btn-share">Compartir</button>
                         <a href="#" class="concert-tickets">Entradas</a>
                     </div>
                 </div>
             </article>
-
             <article class="card concert-card">
+                <img src="img/concert1.jpg" alt="Megadeth" class="concert-img">
+                
+                <div class="concert-info">
+                    
+                    <h4 class="h4 concert-title">Megadeth</h4><p class="concert-date">29 de mayo de 2026</p>
+                    <p class="concert-location">
+                        Bizkaia Arena BEC, Barakaldo
+                    </p>
+
+                    <div class="concert-actions">
+                        <button class="btn btn-primary btn-interest">Me interesa</button>
+                        <button class="btn btn-secondary btn-share">Compartir</button>
+                        <a href="#" class="concert-tickets">Entradas</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card concert-card">
+                <img src="img/concert1.jpg" alt="Megadeth" class="concert-img">
+                
+                <div class="concert-info">
+                    
+                    <h4 class="h4 concert-title">Megadeth</h4><p class="concert-date">29 de mayo de 2026</p>
+                    <p class="concert-location">
+                        Bizkaia Arena BEC, Barakaldo
+                    </p>
+
+                    <div class="concert-actions">
+                        <button class="btn btn-primary btn-interest">Me interesa</button>
+                        <button class="btn btn-secondary btn-share">Compartir</button>
+                        <a href="#" class="concert-tickets">Entradas</a>
+                    </div>
+                </div>
+            </article><article class="card concert-card">
                 <img src="img/concert2.jpg" alt="Melody Waves" class="concert-img">
                 
                 <div class="concert-info">
@@ -79,16 +118,87 @@
                     </p>
 
                     <div class="concert-actions">
-                        <button class="btn primary-btn btn-interest">Me interesa</button>
-                        <button class="btn secondary-btn btn-share">Compartir</button>
+                        <button class="btn btn-primary btn-interest">Me interesa</button>
+                        <button class="btn btn-secondary btn-share">Compartir</button>
                         <a href="#" class="concert-tickets">Entradas</a>
                     </div>
                 </div>
-            </article>
+            </article></section>
 
         </section>
 
-    </main>
+        <section class="container fans">
 
+            <h3 id="fans" class="h3">Fans</h3>
+                <section class=" grid-container">
+                    <article class="card concert-card">
+                        <img src="img/concert1.jpg" alt="Megadeth" class="concert-img">
+                        
+                        <div class="concert-info">
+                            <h4 class="h4 concert-title">Megadeth</h4><p class="concert-date">29 de mayo de 2026</p>
+                            <p class="concert-location">
+                                Bizkaia Arena BEC, Barakaldo
+                            </p>
+
+                            <div class="concert-actions">
+                                <button class="btn btn-primary btn-interest">Me interesa</button>
+                                <button class="btn btn-secondary btn-share">Compartir</button>
+                                <a href="#" class="concert-tickets">Entradas</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card concert-card">
+                        <img src="img/concert1.jpg" alt="Megadeth" class="concert-img">
+                            <div class="concert-info">
+                                
+                                <h4 class="h4 concert-title">Megadeth</h4><p class="concert-date">29 de mayo de 2026</p>
+                                <p class="concert-location">
+                                    Bizkaia Arena BEC, Barakaldo
+                                </p>
+
+                                <div class="concert-actions">
+                                    <button class="btn btn-primary btn-interest">Me interesa</button>
+                                    <button class="btn btn-secondary btn-share">Compartir</button>
+                                    <a href="#" class="concert-tickets">Entradas</a>
+                                </div>
+                            </div>
+                    </article>
+                    <article class="card concert-card">
+                        <img src="img/concert1.jpg" alt="Megadeth" class="concert-img">
+                        
+                        <div class="concert-info">
+                            
+                            <h4 class="h4 concert-title">Megadeth</h4><p class="concert-date">29 de mayo de 2026</p>
+                            <p class="concert-location">
+                                Bizkaia Arena BEC, Barakaldo
+                            </p>
+
+                            <div class="concert-actions">
+                                <button class="btn btn-primary btn-interest">Me interesa</button>
+                                <button class="btn btn-secondary btn-share">Compartir</button>
+                                <a href="#" class="concert-tickets">Entradas</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card concert-card">
+                        <img src="img/concert2.jpg" alt="Melody Waves" class="concert-img">
+                        
+                        <div class="concert-info">
+                            <h4 class="h4 concert-title">Bad Gyal</h4>
+                            <p class="concert-date">15 de mayo de 2026</p>
+                            <p class="concert-location">
+                                Bilbao Arena Miribilla, Bilbao
+                            </p>
+
+                            <div class="concert-actions">
+                                <button class="btn btn-primary btn-interest">Me interesa</button>
+                                <button class="btn btn-secondary btn-share">Compartir</button>
+                                <a href="#" class="concert-tickets">Entradas</a>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+        </section>
+    </main>
 </body>
 </html>

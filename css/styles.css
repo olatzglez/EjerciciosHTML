@@ -47,7 +47,7 @@
     /* CARD */
     --card-padding: 1rem;
     --card-border-radius: 8px;
-    --card-heigth: 200px;
+    --card-height: 200px;
     --card-width: 200px;
     
     /* ENLACES */
@@ -55,15 +55,15 @@
     --link-color-hover:var(--orange);
     
     /* BOTONES */
-    --btn-heigth: 40px;
+    --btn-height: 40px;
     --btn-border-radius: 8px; 
     --bg-btn-primary: var(--orange);
     --btn-border-primary: 1px solid var(--orange);
     --btn-text-primary: var(--black);
     --bg-btn-secondary: var(--light-blue);
-    --btn-border-secondary: 1px solid var(--blue);
-    --btn-text-secondary: var(--black);
-    --btn-min-heigth: 32px;
+    --btn-border-secondary: 1px solid var(--orange);
+    --btn-text-secondary: var(--orange);
+    --btn-min-height: 32px;
 }      
 
 /* ESTILOS GENERALES */
@@ -96,7 +96,7 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
-    line-height: 1em;
+    line-height: 0.75em;
     font-weight: 400;
     margin: 0 0 var(--spacing-16) 0;
     color: var(--white);
@@ -104,7 +104,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    line-height: 1.75em;
+    line-height: 1em;
     font-weight: 400;
     margin: 0 0 var(--spacing-16) 0;
 }
@@ -142,8 +142,9 @@ p {
 /* CONTAINERS */
 
 .container {
+    max-width: 1200px;
     padding: var(--container-padding);
-    margin: 0;
+    margin: auto;
 }
 
 .container.user-info {
@@ -190,6 +191,7 @@ a:hover, a:focus {
     padding: var(--header-padding);
     background-color: var(--dark-blue);
     height: var(--header-height);
+    width: 100%;
     
 }
 
@@ -203,12 +205,15 @@ header.profile-header { /* Cabecera del perfil */
 .navbar.main-menu {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   position: relative;
-  justify-content: space-between;
   align-items: center;
   height: 100%;
   align-content: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 var(--spacing-24);
 }
 
 .menu-icon {
@@ -303,6 +308,7 @@ header.profile-header { /* Cabecera del perfil */
     padding: var(--btn-padding);
     border: 1px solid;
     border-radius: var(--btn-border-radius);
+    background-color: transparent;
 }
 
 .btn-list {
@@ -313,7 +319,7 @@ header.profile-header { /* Cabecera del perfil */
 
 }
 
-.btn.primary-btn {
+.btn.btn-primary {
     background-color: var(--bg-btn-primary);
     padding: var(--btn-padding);
     color: var(--black);
@@ -321,8 +327,8 @@ header.profile-header { /* Cabecera del perfil */
     border-radius: var(--btn-border-radius);
 
     &:hover, &:focus {
-        background-color: var(--dark-orange);
-        color: var(--black);
+        background-color: transparent;
+        color: var(--orange);
         transition: all ease 0.8;
         border-color: var(--dark-orange);
     }
@@ -333,8 +339,8 @@ header.profile-header { /* Cabecera del perfil */
     margin-right: 0;
 }
 
-.btn.secondary-btn {
-    background-color: var(--bg-btn-secondary);
+.btn.btn-secondary {
+    background-color: transparent;
     padding: var(--btn-padding);
     color: var(--btn-text-secondary);
     border: var(--btn-border-secondary);
@@ -347,12 +353,12 @@ header.profile-header { /* Cabecera del perfil */
     }
 }
 
-.btn.secondary-btn p, .btn.secondary-btn a, .btn.secondary-btn span {
+.btn.btn-secondary p, .btn.btn-secondary a, .btn.btn-secondary span {
     font-family: var(--font-family);
     font-weight: var(--bold);
 }
 
-.btn.terciary-btn {
+.btn.btn-terciary {
     background-color:var(--orange);
     color: var(--black);
 
@@ -395,6 +401,8 @@ header.profile-header { /* Cabecera del perfil */
 section.tabs {
     display: flex;
     gap: var(--spacing-8);
+    margin-bottom: var(--spacing-24);
+    padding: 0 var(--container-padding);
 }
 
 /* INPUTS */
@@ -452,7 +460,7 @@ input::placeholder {
     color: var(--light-blue);
     border: none;
     border-radius: var(--btn-border-radius);
-    height: var(--btn-heigth);
+    height: var(--btn-height);
 }
 
 .option {
@@ -465,7 +473,7 @@ input::placeholder {
     width: 100%;
 }
 
-.btn-search {
+.btn.btn-primary.btn-search {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,7 +493,7 @@ input::placeholder {
 }
 
 .btn.btn-edit { /* Btn para editar el perfil */
-    width: 20%;
+    width: 80px;
 }
 
 /* FOOTER */
@@ -494,6 +502,7 @@ input::placeholder {
     background-color: var(--dark-blue);
     padding: var(--footer-padding);
     margin: var(--footer-margin);
+    width: 100%;
 }
 
 .footer .logo {
@@ -508,6 +517,11 @@ input::placeholder {
     margin-bottom: var(--spacing-12);
 }
 
+.footer nav.navbar {
+    max-width: 1200px;
+    margin: auto;
+}
+
 ul.nav-list.footer-list {
     justify-content: space-between;
     margin-bottom: var(--spacing-16);
@@ -517,7 +531,7 @@ ul.nav-list.footer-list {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-16);
   }
 
@@ -555,6 +569,10 @@ img.user-avatar {
     border-radius: 100%;
 }
 
+.user-username {
+    color: var(--light-blue);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -577,7 +595,16 @@ img.user-avatar {
         height: var(--header-height);
     }
 
+    .concert-actions {
+    display: flex;
+    justify-content: flex-start;
+    }
+
+    .profile section > section.grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
 
 /* Pantallas medianas (desktops y laptops) */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -606,6 +633,11 @@ img.user-avatar {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--spacing-16);
   }
+
+  .concert-actions {
+    display: flex;
+    justify-content: flex-start;
+}
 }
 
 /* Pantallas muy pequeñas (móviles en orientación vertical) */
@@ -677,6 +709,15 @@ img.user-avatar {
     display: grid;
     grid-template-columns: 1fr;
     gap:(var(--spacing-16));
+}
+
+.concert-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section.tabs {
+    flex-direction: column;
 }
 
     /* FOOTER */
