@@ -6,6 +6,7 @@
     --font-size-16: 1rem;
     --bold: 800;
     --dark-blue: #091926;
+    --dark-blue-gradient: rgba(9, 25, 38, 0.5);
     --blue: #03658C;
     --light-blue: #05C7F2;
     --dark-orange: #F24405;
@@ -23,7 +24,7 @@
     --main-menu-padding: 0 24px;
     --btn-padding: 16px 8px;
     --container-padding: 24px;
-    --btn-list-padding: 24px 0;
+    --btn-list-padding: 16px 0;
     --card-list-padding: 0;
     --footer-padding: 16px 24px;
     --nav-list-padding: 8px 0;
@@ -51,8 +52,8 @@
     --card-width: 200px;
     
     /* ENLACES */
-    --link-color:var(--light-blue);
-    --link-color-hover:var(--orange);
+    --link-color:var(--orange);
+    --link-color-hover:var(--dark-orange);
     
     /* BOTONES */
     --btn-height: 40px;
@@ -88,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2.15rem;
-    line-height: 1em;
+    line-height: 1.2em;
     font-weight: 400;
     color: var(--light-blue);
     margin: 0;
@@ -96,7 +97,7 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
-    line-height: 0.75em;
+    line-height: 1.25em;
     font-weight: 400;
     margin: 0 0 var(--spacing-16) 0;
     color: var(--white);
@@ -104,7 +105,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    line-height: 1em;
+    line-height: 1.3em;
     font-weight: 400;
     margin: 0 0 var(--spacing-16) 0;
 }
@@ -118,7 +119,7 @@ h4 {
 
 h5 {
     font-size: 1rem;
-    line-height: 1.25em;
+    line-height: 1.5em;
     font-weight: 400;
     margin: 0 0 var(--spacing-16) 0;
 
@@ -126,7 +127,7 @@ h5 {
 
 h6 {
     font-size: 1rem;
-    line-height: 1.188em;
+    line-height: 1.6em;
     font-weight: 400;
     margin: 0 0 var(--spacing-16) 0;
 }
@@ -150,6 +151,19 @@ p {
 .container.concert-info {
     display: flex;
     gap: var(--spacing-12);
+}
+
+.hero {
+    background-image:url("../assets/img/foto_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
 }
 
 /* LISTAS */
@@ -187,6 +201,14 @@ a:hover, a:focus {
     transition: all ease 0.9;
 }
 
+.nav-list a {
+    color: var(--light-blue);
+}
+
+.header .navbar .btn a {
+    color: var(--black);
+}
+
 /* CABECERA Y MENÚ */
 
 .header {
@@ -194,10 +216,16 @@ a:hover, a:focus {
     background-color: var(--dark-blue);
     height: var(--header-height);
     width: 100%;
-    
+    z-index: 2;
+    color: var(--light-blue);
 }
 
-header.concert-header { /* Cabecera del perfil */
+.header_title_menu {
+    display: flex;
+    align-items: center;
+}
+
+header.concert-header { /* Cabecera del Concierto */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -218,13 +246,20 @@ header.concert-header { /* Cabecera del perfil */
   padding: 0 var(--spacing-24);
 }
 
+.logo-icon {
+    height: 3rem;
+    width: auto;
+    left: -6px;
+    position: relative;
+}
+
 .menu-icon {
     display: none;
 }
 
 .menu-icon img {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: auto;
 }
 
 #menu_hamburguesa {
@@ -241,6 +276,7 @@ header.concert-header { /* Cabecera del perfil */
     padding: 0;
     flex-grow: 1;
     text-align: left;
+    color: var(--white);
 }
 
 .nav-list {
@@ -284,6 +320,10 @@ header.concert-header { /* Cabecera del perfil */
 
     }
 }
+
+    .card a {
+        color: var(--light-blue);
+    }
 
 .card-picture img {
     width: 100%;
@@ -522,7 +562,10 @@ input::placeholder {
 .footer nav.navbar {
     max-width: 1200px;
     margin: auto;
+    gap: var(--spacing-16);
+    justify-content: space-between;
 }
+
 
 ul.nav-list.footer-list {
     justify-content: space-between;
@@ -533,7 +576,7 @@ ul.nav-list.footer-list {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--spacing-16);
   }
 
@@ -607,10 +650,12 @@ img.concert-avatar {
     }
 }
 
-
 /* Pantallas medianas (desktops y laptops) */
 @media (min-width: 992px) and (max-width: 1199px) {
 
+    .navbar.main-menu {
+        padding: 0;
+    }
 }
 
 /* Pantallas pequeñas (tabletas en orientación horizontal o dispositivos pequeños) */
@@ -621,7 +666,12 @@ img.concert-avatar {
     }    
 
     .navbar.main-menu .nav-list {
+        display: none;
         height: 0;
+    }
+
+    .navbar.main-menu {
+        padding: 0;
     }
 
     #menu_hamburguesa:checked ~ .nav-list {
@@ -639,7 +689,7 @@ img.concert-avatar {
   .concert-actions {
     display: flex;
     justify-content: flex-start;
-}
+    }
 }
 
 /* Pantallas muy pequeñas (móviles en orientación vertical) */
@@ -663,6 +713,7 @@ img.concert-avatar {
     align-content: center;
     flex-wrap: wrap;
     position: relative;
+    padding: 0;
   }
 
   .navbar.main-menu .nav-list {
@@ -679,16 +730,17 @@ img.concert-avatar {
     padding: var(--spacing-32) 0 0 0;
     transition: opacity 0.6s ease, visibility 0.8s ease;
   }
-
-#menu_hamburguesa:checked ~ .nav-list {
-  display: flex;
-  opacity: 1;
-  visibility: visible;
-}
+  
 
 .navbar.main-menu > .list-item.nav-list-item a {
     gap: var(--spacing-16);
 }
+/*
+#menu_hamburguesa:checked ~ .nav-list {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}*/
 
 .btn {
     width: 100%;
@@ -730,6 +782,7 @@ section.tabs {
     }
 }
 
+
 /* Pantallas extremadamente pequeñas (móviles pequeños) */
 @media (max-width: 480px) {
 
@@ -747,7 +800,7 @@ section.tabs {
   }
 
     .navbar.main-menu .nav-list {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -760,6 +813,12 @@ section.tabs {
     text-align: center;
     padding: var(--spacing-12) 0;
   }
+/*
+    #menu_hamburguesa:checked ~ .nav-list {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}*/
 
   .menu-icon {
     display: block;
