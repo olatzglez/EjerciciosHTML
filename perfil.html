@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Perfil de Jone</title>
+        <title>Concierto de Megadeth</title>
         <link rel="stylesheet" href="http://127.0.0.1:5500/css/styles.css?_cacheOverride=1772482580743"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&amp;display=swap&amp;_cacheOverride=1772482580743" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap&amp;_cacheOverride=1772482580744" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -24,22 +24,22 @@
     </head>
     <body>
 
-    <main class="profile">
+    <main class="concert">
 
-        <header class="header profile-header">
-            <h1 class="h1 profile-title">Perfil</h1>
+        <header class="header concert-header">
+            <h1 class="h1 concert-title">Concierto</h1>
             <button class="btn btn-primary btn-edit">Editar</button>
         </header>
 
-        <section class="container user-info">
-            <img src="/assets/img/avatar.jpg" alt="Foto de perfil" class="user-avatar">
-            <div class="user-data">
-                <h2 class="h2 user-name">Jone A</h2>
-                <p class="user-username">@joneaaa</p>
-                <p class="user-location">28, Bilbao</p>
+        <section class="container concert-info">
+            <img src="/assets/img/avatar.jpg" alt="Foto del grupo" class="concert-avatar">
+            <div class="concert-data">
+                <h2 class="h2 concert-name">Megadeth</h2>
+                <p class="concert-concertname">@megadeth</p>
+                <p class="concert-location">Death metal</p>
             </div>
         </section>
-
+        <!-- Badges o burbujas de géneros de música
         <section class="container genres">
             <h3 class="h3 section-title">Géneros favoritos</h3>
             <ul class="genre-list">
@@ -49,28 +49,30 @@
                 <li>Electrónica</li>
             </ul>
         </section>
+        -->
 
         <section class="container tabs">
-            <a href="#conciertos" class="btn btn-primary">Conciertos</a>
+            <a href="#conciertos" class="btn btn-secondary">Grupos</a>
             <a href="#fans" class="btn btn-secondary">Fans</a>
         </section><section class="container concerts">
 
-            <h3 id="conciertos" class="h3">Conciertos</h3>
+            <h3 id="conciertos" class="h3">Grupos</h3>
         <section class="grid-container">
         <article class="card concert-card">
                 <img src="img/concert1.jpg" alt="Megadeth" class="concert-img">
                 
                 <div class="concert-info">
                     
-                    <h4 class="h4 concert-title">Megadeth</h4><p class="concert-date">29 de mayo de 2026</p>
+                    <h4 class="h4 concert-title">Jevitrones</h4>
+                    <p class="concert-date">K pasa trooooon</p>
                     <p class="concert-location">
-                        Bizkaia Arena BEC, Barakaldo
+                        ¡Ya hay <b>15 personas</b> que asistirán!
                     </p>
 
                     <div class="concert-actions">
-                        <button class="btn btn-primary btn-interest">Me interesa</button>
-                        <button class="btn btn-secondary btn-share">Compartir</button>
-                        <a href="#" class="concert-tickets">Entradas</a>
+                        <button class="btn btn-primary btn-interest">Unirme</button>
+                        <button class="btn btn-secondary btn-share">Enviar mensaje</button>
+                        <a href="#" class="btn concert-tickets">Ver fans</a>
                     </div>
                 </div>
             </article>
@@ -87,7 +89,7 @@
                     <div class="concert-actions">
                         <button class="btn btn-primary btn-interest">Me interesa</button>
                         <button class="btn btn-secondary btn-share">Compartir</button>
-                        <a href="#" class="concert-tickets">Entradas</a>
+                        <a href="#" class="btn concert-tickets">Entradas</a>
                     </div>
                 </div>
             </article>
@@ -104,7 +106,7 @@
                     <div class="concert-actions">
                         <button class="btn btn-primary btn-interest">Me interesa</button>
                         <button class="btn btn-secondary btn-share">Compartir</button>
-                        <a href="#" class="concert-tickets">Entradas</a>
+                        <a href="#" class="btn concert-tickets">Entradas</a>
                     </div>
                 </div>
             </article><article class="card concert-card">
@@ -120,7 +122,7 @@
                     <div class="concert-actions">
                         <button class="btn btn-primary btn-interest">Me interesa</button>
                         <button class="btn btn-secondary btn-share">Compartir</button>
-                        <a href="#" class="concert-tickets">Entradas</a>
+                        <a href="#" class="btn concert-tickets">Entradas</a>
                     </div>
                 </div>
             </article></section>
@@ -143,7 +145,7 @@
                             <div class="concert-actions">
                                 <button class="btn btn-primary btn-interest">Me interesa</button>
                                 <button class="btn btn-secondary btn-share">Compartir</button>
-                                <a href="#" class="concert-tickets">Entradas</a>
+                                <a href="#" class="btn concert-tickets">Entradas</a>
                             </div>
                         </div>
                     </article>
@@ -159,7 +161,7 @@
                                 <div class="concert-actions">
                                     <button class="btn btn-primary btn-interest">Me interesa</button>
                                     <button class="btn btn-secondary btn-share">Compartir</button>
-                                    <a href="#" class="concert-tickets">Entradas</a>
+                                    <a href="#" class="btn concert-tickets">Entradas</a>
                                 </div>
                             </div>
                     </article>
@@ -176,7 +178,7 @@
                             <div class="concert-actions">
                                 <button class="btn btn-primary btn-interest">Me interesa</button>
                                 <button class="btn btn-secondary btn-share">Compartir</button>
-                                <a href="#" class="concert-tickets">Entradas</a>
+                                <a href="#" class="btn concert-tickets">Entradas</a>
                             </div>
                         </div>
                     </article>
@@ -193,7 +195,7 @@
                             <div class="concert-actions">
                                 <button class="btn btn-primary btn-interest">Me interesa</button>
                                 <button class="btn btn-secondary btn-share">Compartir</button>
-                                <a href="#" class="concert-tickets">Entradas</a>
+                                <a href="#" class="btn concert-tickets">Entradas</a>
                             </div>
                         </div>
                     </article>

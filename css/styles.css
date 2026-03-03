@@ -147,7 +147,7 @@ p {
     margin: auto;
 }
 
-.container.user-info {
+.container.concert-info {
     display: flex;
     gap: var(--spacing-12);
 }
@@ -176,7 +176,9 @@ a {
     color: var(--link-color);
     text-decoration: none;
     font-size: 1rem;
-    line-height: 0.25em
+    line-height: 0.75em;
+    white-space: normal;
+    min-width: var(--spacing-8);
 }
 
 a:hover, a:focus {
@@ -195,7 +197,7 @@ a:hover, a:focus {
     
 }
 
-header.profile-header { /* Cabecera del perfil */
+header.concert-header { /* Cabecera del perfil */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -306,7 +308,7 @@ header.profile-header { /* Cabecera del perfil */
     min-width: var(--btn-min-width);
     min-height: var(--btn-min-height);
     padding: var(--btn-padding);
-    border: 1px solid;
+    border: 1px solid transparent;
     border-radius: var(--btn-border-radius);
     background-color: transparent;
 }
@@ -563,13 +565,13 @@ ul.nav-list.footer-list {
     gap: var(--spacing-16);
 }
 
-img.user-avatar {
+img.concert-avatar {
     width: 100px;
     height: 100px;
     border-radius: 100%;
 }
 
-.user-username {
+.concert-concertname {
     color: var(--light-blue);
 }
 
@@ -600,7 +602,7 @@ img.user-avatar {
     justify-content: flex-start;
     }
 
-    .profile section > section.grid-container {
+    .concert section > section.grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -6,11 +6,12 @@ Una explicación breve (2 o 3 párrafos) sobre la idea del proyecto. ¿Qué es? 
 Explicación de las vistas creadas y cómo se navega entre ellas.
 * **index.html:** Descripción de lo que representa la página principal.
 * **registro.html:** Descripción de esta segunda pantalla.
-* **perfil** Descripción de esta tercera pantalla.
+* **perfil:** Descripción de esta tercera pantalla.
 
 ## Tecnologías Utilizadas
 * HTML5
 * CSS3
+* CCA - Color Contrast Analyzer
 
 ## Enfoque Técnico
 Breve resumen de cómo se ha planteado el desarrollo:
