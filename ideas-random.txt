@@ -1,0 +1,56 @@
+!!!! HACER EL README !!!!
+
+
+Componentes:
+
+- Btn búsqueda
+
+- Favicon
+
+- Menú hamburguesa
+
+- Btn cerrar menú (opcional, mejor prácticas de accesibilidad).
+
+- Btn Login
+
+- Btn Registrarse
+
+- Btn RR.SS.
+
+- Btn Light mode / Dark mode
+
+
+Ideas random:
+
+- Entradas en grupo.
+
+- Comprar entradas en grupo.
+
+- Crear un grupo, rellenar cupo en el grupo, comprar entradas para todo el grupo.
+
+- Filtro de búsqueda (?) - Quizás dentro de las págs. Conciertos, 	Artistas, Personas (?).
+
+- Menú sticky muahahahaha
+
+- Botones de géneros de música
+
+- Botones de ciudades de España donde se van a hacer conciertos.
+
+- TESTEAR en distintos dispositivos y navegadores.
+
+- Análisis ACCESIBILIDAD.
+
+
+Pantallas:
+
+- Home
+
+- Formulario de registro (Si le damos a Registrarse).
+
+- Perfil: personas afines a ti (géneros musicales, le interesa "x" concierto, etiqueta de ciudad, artistas que le gustan, otros intereses...).
+
+
+
+
+
+

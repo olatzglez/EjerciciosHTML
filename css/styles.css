@@ -1,0 +1,901 @@
+:root {
+    --font-family-text: 'Montserrat', Arial, sans-serif;
+    --font-family-title: 'Poppins', Arial, sans-serif;
+    --font-size-16: 1rem;
+    --font-size-14: 0.875rem;
+    --font-size-20: 1.25rem;
+    --font-size-16: 1rem;
+    --bold: 800;
+    --dark-blue: #091926;
+    --dark-blue-gradient: rgba(9, 25, 38, 0.5);
+    --blue: #03658C;
+    --light-blue: #05C7F2;
+    --dark-orange: #F24405;
+    --orange: #F25C05;
+    --light-orange: #F27405;
+    --white: #F5F5F5;
+    --black: #010304;
+    --gray: #gray;
+
+    /* ALTURAS Y ANCHURAS */
+    --header-height: 60px;
+
+    /* PADDINGS */
+    --header-padding: 1rem;
+    --main-menu-padding: 0 24px;
+    --btn-padding: 16px 8px;
+    --container-padding: 24px;
+    --btn-list-padding: 16px 0;
+    --card-list-padding: 0;
+    --footer-padding: 16px 24px;
+    --nav-list-padding: 8px 0;
+
+    /* ESPACIADOS / SPACINGS */
+    --spacing-0: 0;
+    --spacing-4: 4px;
+    --spacing-6: 6px;
+    --spacing-8: 8px;
+    --spacing-12: 12px;
+    --spacing-16: 16px;
+    --spacing-24: 24px;
+    --spacing-32: 32px;
+    --spacing-40: 40px;
+    --spacing-64: 64px;
+    --spacing: 80px;
+
+    /* MARGINS */
+    --footer-margin: var(--spacing-64) 0 0 0;
+
+    /* CARD */
+    --card-padding: 1rem;
+    --card-border-radius: 8px;
+    --card-height: 200px;
+    --card-width: 200px;
+    
+    /* ENLACES */
+    --link-color:var(--orange);
+    --link-color-hover:var(--dark-orange);
+    
+    /* BOTONES */
+    --btn-height: 40px;
+    --btn-border-radius: 8px; 
+    --bg-btn-primary: var(--orange);
+    --btn-border-primary: 1px solid var(--orange);
+    --btn-text-primary: var(--black);
+    --bg-btn-secondary: var(--light-blue);
+    --btn-border-secondary: 1px solid var(--orange);
+    --btn-text-secondary: var(--orange);
+    --btn-min-height: 32px;
+}      
+
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-text);
+    margin: 0;
+    background-color: var(--black);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--light-blue);
+    font-family: var(--font-family-title);
+}
+
+h1 {
+    font-size: 2.15rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: var(--light-blue);
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.25em;
+    font-weight: 400;
+    margin: 0 0 var(--spacing-16) 0;
+    color: var(--white);
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    font-weight: 400;
+    margin: 0 0 var(--spacing-16) 0;
+}
+
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0 0 var(--spacing-16) 0;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0 0 var(--spacing-16) 0;
+
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin: 0 0 var(--spacing-16) 0;
+}
+
+p {
+    color: var(--white);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-16);
+    font-weight: 400;
+    line-height: 1.188em;
+}
+
+h2.h2.concert-name {
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+/* CONTAINERS */
+
+.container {
+    max-width: 1200px;
+    padding: var(--container-padding);
+    margin: auto;
+}
+
+.container.concert-info {
+    display: flex;
+    gap: var(--spacing-12);
+}
+
+.hero {
+    background-image:url("../assets/img/foto_hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* LISTAS */
+
+ul, li {
+    margin: var(--spacing-0);
+    padding: var(--spacing-0);
+}
+
+ul li {
+    list-style: none;
+    
+}
+
+ul.list.card-list {
+    padding: 0 auto;
+    margin-bottom: var(--spacing-16);
+}
+
+
+/* ENLACES */
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 0.75em;
+    white-space: normal;
+    min-width: var(--spacing-8);
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: var(--link-color-hover);
+    transition: all ease 0.9;
+}
+
+.nav-list a {
+    color: var(--light-blue);
+}
+
+.header .navbar .btn a {
+    color: var(--black);
+}
+
+/* CABECERA Y MENÚ */
+
+.header {
+    padding: var(--header-padding);
+    background-color: var(--dark-blue);
+    height: var(--header-height);
+    width: 100%;
+    z-index: 2;
+    color: var(--light-blue);
+}
+
+.header_title_menu {
+    display: flex;
+    align-items: center;
+}
+
+header.concert-header { /* Cabecera del Concierto */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.registro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-16);
+}
+
+.navbar.main-menu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  height: 100%;
+  align-content: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 var(--spacing-24);
+}
+
+.navbar.main-menu .nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-24);
+  align-items: center;
+  position: static;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.logo-icon {
+    height: 40px;
+    width: auto;
+    left: -6px;
+    position: relative;
+}
+
+.menu-icon img {
+    width: 32px;
+    height: auto;
+}
+
+#menu_hamburguesa {
+    display: none;
+    cursor: pointer;
+}
+
+.label_menu_hamburguesa::before {
+  content: "☰";
+  font-size: 24px;
+}
+
+#menu_hamburguesa:checked ~ .label_menu_hamburguesa::before {
+  content: "✕";
+}
+
+.icon-close {
+  display: none;
+}
+
+.main-title {
+    font-size: var(--font-size-20);
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    text-align: left;
+    color: var(--white);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-24);
+  align-items: center;
+}
+
+.list-item.nav-list-item {
+    display: flex;
+    margin: 0 8px;
+    align-items: center;
+}
+
+.list-item .btn {
+  margin-right: 1rem;;
+}
+
+.navbar.main-menu .label {
+    color: var(--light-blue);
+    margin-right: var(--spacing-8);
+}
+
+.menu_hamburguesa {
+    display: none;
+}
+
+/* CARDS */
+
+.card {
+    background-color: var(--dark-blue);
+    padding: var(--card-padding);
+    border: 1px solid var(--dark-blue);
+    border-radius: var(--card-border-radius);
+    width: 100%;
+    min-height: 200px;
+
+    &:hover {
+        border-color: var(--orange);
+
+    }
+}
+
+    .card a {
+        color: var(--light-blue);
+    }
+
+.card-picture img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    min-height: 100px;
+    object-fit: cover;
+}
+
+.container .card {
+    margin-bottom: var(--spacing-16);
+}
+
+/* BOTONES */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-16);
+    min-width: var(--btn-min-width);
+    min-height: var(--btn-min-height);
+    padding: var(--btn-padding);
+    border: 1px solid transparent;
+    border-radius: var(--btn-border-radius);
+    background-color: transparent;
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: row;
+  padding: var(--btn-list-padding);
+  margin: 0;
+  gap: var(--spacing-16);
+}
+
+.btn.btn-primary {
+    background-color: var(--bg-btn-primary);
+    padding: var(--btn-padding);
+    color: var(--black);
+    border: var(--btn-border-primary);
+    border-radius: var(--btn-border-radius);
+
+    &:hover, &:focus {
+        background-color: transparent;
+        color: var(--orange);
+        transition: all ease 0.8;
+        border-color: var(--dark-orange);
+    }
+}
+
+.header .btn {
+    height: var(--spacing-40);
+    margin-right: 0;
+}
+
+.btn.btn-secondary {
+    background-color: transparent;
+    padding: var(--btn-padding);
+    color: var(--btn-text-secondary);
+    border: var(--btn-border-secondary);
+    border-radius: var(--btn-border-radius);
+
+    &:hover, &:focus {
+        background-color: var(--bg-btn-primary);
+        color: var(--black);
+        transition: ease all 0.8;
+    }
+}
+
+.btn.btn-secondary p, .btn.btn-secondary a, .btn.btn-secondary span {
+    font-family: var(--font-family-text);
+    font-weight: var(--bold);
+}
+
+.btn.btn-terciary {
+    background-color:var(--orange);
+    color: var(--black);
+
+    &:hover, &:focus {
+        background-color: var(--dark-orange);
+        color: var(--white);
+        transition: ease all 0.8;
+    }
+}
+
+/* TABS */
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-16);
+    min-width: var(--btn-min-width);
+    min-height: var(--btn-min-height);
+    padding: var(--btn-padding);
+    border: 1px solid;
+    border-radius: var(--btn-border-radius);
+}
+
+section.tabs {
+    display: flex;
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-24);
+    padding: 0 var(--container-padding);
+}
+
+/* INPUTS */
+
+.input {
+    height: 40px;
+    min-width: 40px;
+    width: 100%;
+    border: 1px solid var(--gray);
+    border-radius: 8px; /* Hacer una variable del border-radius de los inputs */
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-14);
+    padding: var(--spacing-4) var(--spacing-8);
+    outline: none;
+}
+
+.input-search {
+    border-right: 0;
+    border-radius: var(--spacing-8) 0 0 var(--spacing-8);
+}
+
+input::placeholder {
+    color: #2f2f2f;
+}
+
+input[type="checkbox"] {
+    display: flex;
+    height: 24px;
+    width: 24px;
+}
+
+.label { /* Label de los select */
+  display: inline-block;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-16);
+  margin: 0;
+  color: var(--white);
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    width: 100%;
+    margin-bottom: var(--spacing-16);
+}
+
+.container-input > label {
+    margin-left: 0;
+}
+
+.select {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-14);
+  color: var(--text-light-color);
+  height: var(--btn-height);
+  border-radius: var(--btn-border-radius);
+}
+
+.header select#idioma {
+    font-size: var(--font-size-16);
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    border: none;
+    border-radius: var(--btn-border-radius);
+    height: var(--btn-height);
+}
+
+.option {
+    font-size: 0.85rem;
+    font-family: var(--font-family-text);
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.btn.btn-primary.btn-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--spacing-16);
+    border: 1px solid var(--orange);
+    border-radius: 0 var(--spacing-4) var(--spacing-4) 0;
+    border-left: 0;
+    background-color: var(--orange);
+    color: var(--black);
+    cursor: pointer;
+}
+
+.btn-search .icon {
+    width: var(--spacing-24);
+    height: var(--spacing-24);
+
+}
+
+.btn.btn-edit { /* Btn para editar el perfil */
+    width: 80px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--dark-blue);
+    padding: var(--footer-padding);
+    margin: var(--footer-margin);
+    width: 100%;
+}
+
+.footer .logo {
+    font-size: var(--font-size-16);
+    color: var(--white);
+}
+
+.footer > .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-24);
+    margin-bottom: var(--spacing-12);
+}
+
+.footer nav.navbar {
+    max-width: 1200px;
+    margin: auto;
+    gap: var(--spacing-16);
+    justify-content: space-between;
+}
+
+
+ul.nav-list.footer-list {
+    justify-content: space-between;
+    margin-bottom: var(--spacing-16);
+}
+
+/* GRID / REJILLA */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-16);
+  }
+
+/* FORMULARIOS */
+
+.legend {
+    font-size: var(--font-size-16);
+    font-weight: var(--bold);
+    color: var(--light-blue);
+    margin-bottom: var(--spacing-8);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: var(--spacing-24);
+}
+
+/* OTROS */
+
+.genre-list li {
+    color: var(--white);
+    font-size: var(--font-size-14);
+}
+
+.genre-list {
+    display: flex;
+    gap: var(--spacing-8);
+}
+
+.concert-actions { /* Div de los btn de acción de la card conciertos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--spacing-16);
+    gap: var(--spacing-16);
+}
+
+.concert-data {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+}
+
+img.concert-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.concert-concertname {
+    color: var(--light-blue);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* Pantallas grandes (desktops grandes) */
+@media (min-width: 1200px) {
+    .header {
+        height: var(--header-height);
+    }
+
+    .concert-actions {
+    display: flex;
+    justify-content: flex-start;
+    }
+
+    .concert section > section.grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .label_menu_hamburguesa::before {
+        display: none;
+    }
+}
+
+/* Pantallas medianas (desktops y laptops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .navbar.main-menu {
+        padding: 0;
+    }
+
+    /* Mostrar icono */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Estado cerrado */
+  .navbar.main-menu .nav-list {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    width: 280px;
+    height: calc(100vh - var(--header-height));
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+  }
+
+}
+
+/* Tamaños menores de 992px */
+
+@media (max-width: 991px) {
+
+  /* Mostrar icono hamburguesa */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Ocultar menú horizontal por defecto */
+  .navbar.main-menu .nav-list {
+    display: none;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Mostrar solo cuando se activa el checkbox */
+  #menu_hamburguesa:checked ~ .nav-list {
+    display: flex;
+  }
+}
+
+/* Pantallas pequeñas (tabletas en orientación horizontal o dispositivos pequeños) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }    
+
+    .navbar.main-menu {
+        padding: 0;
+    }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-16);
+  }
+
+  .concert-actions {
+    display: flex;
+    justify-content: flex-start;
+    }
+}
+
+/* Pantallas muy pequeñas (móviles en orientación vertical) */
+@media (max-width: 767px) {
+
+  .header_title_menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar.main-menu { 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+  }
+
+.navbar.main-menu > .list-item.nav-list-item a {
+    gap: var(--spacing-16);
+}
+
+.btn {
+    width: 100%;
+}
+
+.btn-search {
+    width: 10%;
+}
+
+.btn-list {
+    flex-direction: column;
+    padding-top: var(--spacing-0);
+}
+
+.btn-list .list-item {
+    margin-bottom: var(--spacing-12);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:(var(--spacing-16));
+}
+
+.concert-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section.tabs {
+    flex-direction: column;
+}
+
+    /* FOOTER */
+
+.footer > .navbar.nav-list {
+    flex-direction: column;
+    justify-content: space-between;
+    }
+}
+
+/* Pantallas extremadamente pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+
+  .navbar.main-menu { 
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .nav-list-item {
+    text-align: center;
+    padding: var(--spacing-12) 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .btn-list {
+    flex-direction: column;
+    padding-top: var(--spacing-0);
+  }
+
+  .btn-list .list-item {
+    margin-bottom: var(--spacing-12);
+  }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:(var(--spacing-16));
+  }
+
+    /* FOOTER */
+
+    .footer .nav-list {
+        flex-direction: column;
+    }
+}
