@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
@@ -30,49 +31,52 @@
     </head>
     <body class="">
         <header class="header">
-                <nav class="navbar main-menu">
-                    <div class="header_title_menu">
-                        <a href="index.html" id="logo-icon">
-                            <img class="logo-icon" src="/assets/img/logo-concertly.jpg" alt="Inicio">
-                        </a>
-                        <h1 class="main-title h1 logo">Concertly</h1>
-                    </div>
+            <nav class="navbar main-menu">
+                <div class="header_title_menu">
+                    <a href="index.html" id="logo-icon">
+                        <img class="logo-icon" src="/assets/img/logo-concertly.jpg" alt="Inicio">
+                    </a>
+                    <h1 class="main-title h1 logo">Concertly</h1>
+                </div>
 
-                    <label for="menu_hamburguesa" class="label_menu_hamburguesa">
-                        
-                    <span class="menu-icon" id="menu-icon">
-                            <img src="/assets/img/menu-icon-white.svg" alt="Menú">
-                        </span></label>
-                    <input type="checkbox" name="" id="menu_hamburguesa" class="menu_hamburguesa">
+                <input type="checkbox" name="" id="menu_hamburguesa" class="menu_hamburguesa">
+                <label for="menu_hamburguesa" class="label_menu_hamburguesa">
+                    <span class="icon-open"></span>
+                    <span class="icon-close"></span>
+                </label>
 
-                    <ul class="nav-list">
-                        <li class="list-item nav-list-item">
-                            <label for="idioma" class="label  sr-only">Idioma</label>
-                            <select name="idioma" id="idioma" class="select select-idioma">
-                                <option class="option select-option" value="castellano">Castellano</option>
-                                <option class="option select-option" value="euskera">Euskera</option>
-                                <option class="option select-option" value="english">English</option>
-                            </select>
-                        </li>
-                    </ul>
-                </nav>
+                <ul class="nav-list">
+                    <li class="list-item nav-list-item"><a class="" href="/conciertos.html" target="_blank" aria-label="Conciertos">Conciertos</a></li>
+                    <li class="list-item nav-list-item"><a class="" href="#" target="_blank" aria-label="Grupos">Grupos</a></li>
+                    <li class="list-item nav-list-item"><a class="" href="#" target="_blank" aria-label="Artistas">Artistas</a></li>
+                    <li class="list-item nav-list-item"><a class="" href="registro.html" target="_blank" aria-label="Registrarse">Registrarse</a></li>
+                    <li class="list-item nav-list-item"><a href="perfil.html" class="btn btn-primary">Iniciar sesión</a></li>
+                    <li class="list-item nav-list-item">
+                        <label for="idioma" class="label  sr-only">Idioma</label>
+                        <select name="idioma" id="idioma" class="select select-idioma">
+                            <option class="option select-option" value="castellano">Castellano</option>
+                            <option class="option select-option" value="euskera">Euskera</option>
+                            <option class="option select-option" value="english">English</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        
-            <main>
-                <section class="container registro">
-                    <header class="registro-header">
-                        <h2>Registro en Concertly</h2>
-                        <div class="form-group btn-list">
-                            <a class="btn btn-secondary" href="index.html" target="_blank" aria-label="Volver al Inicio">← Volver al Inicio</a>
-                            <div class="btn-list">
-                                <span>¿Ya tienes cuenta?</span>
-                                <a class="" href="index.html" target="_blank" aria-label="Iniciar sesión">Iniciar sesión</a>/div&gt;
-                            </div>
+        <main>
+            <section class="container registro">
+                <header class="registro-header">
+                    <h2>Registro en Concertly</h2>
+                    <div class="form-group btn-list">
+                        <a class="btn btn-secondary" href="index.html" target="_blank" aria-label="Volver al Inicio">← Volver al Inicio</a>
+                        <div class="btn-list">
+                            <span>¿Ya tienes cuenta?</span>
+                            <a class="" href="index.html" target="_blank" aria-label="Iniciar sesión">Iniciar sesión</a>
                         </div>
-                    </header>
+                    </div>
+                </header>
 
-                    <section class="card">   
-                        <form action="#" method="post" class="form-registro">
+                <section class="card">   
+                    <form action="#" method="post" class="form-registro">
                         <fieldset class="form-group grid-container">
                             <legend class="legend">Datos personales</legend>
 
@@ -119,7 +123,7 @@
                             <div class="container-input">
                                 <label class="label" for="genero">Género</label>
                                 <select class="select input" id="genero" name="genero" required>
-                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option class="option_disabled" value="" disabled selected>Selecciona una opción</option>
                                 <option value="mujer">Mujer</option>
                                 <option value="hombre">Hombre</option>
                                 <option value="no_binario">No binario</option>
@@ -130,7 +134,7 @@
                             <div class="container-input">
                                 <label class="label" for="pronombres">Pronombres</label>
                                 <select class="select input" id="pronombres" name="pronombres" multiple="" required>
-                                <option value="" disabled selected>Ctrl + clic para escoger varias</option>
+                                <option class="option_disabled" value="" disabled selected>Ctrl + clic para escoger varias</option>
                                 <option value="mujer">Ella</option>
                                 <option value="hombre">Él</option>
                                 <option value="no_binario">Elle</option>

@@ -15,7 +15,7 @@
     --light-orange: #F27405;
     --white: #F5F5F5;
     --black: #010304;
-    --gray: #808080;
+    --gray: #2F2F2F;
 
     /* ALTURAS Y ANCHURAS */
     --header-height: 60px;
@@ -593,6 +593,10 @@ input[type="checkbox"] {
     font-family: var(--font-family-text);
 }
 
+.option_disabled {
+    color: var(--gray);
+}
+
 .input-wrapper {
     display: flex;
     flex-direction: row;
@@ -629,6 +633,7 @@ input[type="checkbox"] {
     padding: var(--footer-padding);
     margin: var(--footer-margin);
     width: 100%;
+    min-height: 60px;
 }
 
 .footer .logo {
@@ -653,7 +658,6 @@ input[type="checkbox"] {
 
 ul.nav-list.footer-list {
     justify-content: space-between;
-    margin-bottom: var(--spacing-16);
 }
 
 /* GRID / REJILLA */
