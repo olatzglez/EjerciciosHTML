@@ -1,11 +1,6 @@
 :root {
-<<<<<<< HEAD
     --font-family-text: 'Montserrat', Arial, sans-serif;
     --font-family-title: 'Poppins', Arial, sans-serif;
-=======
-    --font-family: 'Poppins', Arial, sans-serif;
-    --font-family-text: 'Montserrat', Arial, sans-serif;
->>>>>>> origin/master
     --font-size-16: 1rem;
     --font-size-14: 0.875rem;
     --font-size-20: 1.25rem;
@@ -20,7 +15,7 @@
     --light-orange: #F27405;
     --white: #F5F5F5;
     --black: #010304;
-    --gray: #gray;
+    --gray: #808080;
 
     /* ALTURAS Y ANCHURAS */
     --header-height: 60px;
@@ -28,11 +23,7 @@
     /* PADDINGS */
     --header-padding: 1rem;
     --main-menu-padding: 0 24px;
-<<<<<<< HEAD
     --btn-padding: 24px 16px;
-=======
-    --btn-padding: 16px 8px;
->>>>>>> origin/master
     --container-padding: 24px;
     --btn-list-padding: 16px 0;
     --card-list-padding: 0;
@@ -56,11 +47,7 @@
     --footer-margin: var(--spacing-64) 0 0 0;
 
     /* CARD */
-<<<<<<< HEAD
     --card-padding: 16px 12px 24px 12px;
-=======
-    --card-padding: 1rem;
->>>>>>> origin/master
     --card-border-radius: 8px;
     --card-height: 200px;
     --card-width: 200px;
@@ -90,11 +77,7 @@
 }
 
 body {
-<<<<<<< HEAD
     font-family: var(--font-family-text);
-=======
-    font-family: var(--font-family);
->>>>>>> origin/master
     margin: 0;
     background-color: var(--black);
 
@@ -102,11 +85,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--light-blue);
-<<<<<<< HEAD
     font-family: var(--font-family-title);
-=======
-    font-family: var(--font-family);
->>>>>>> origin/master
 }
 
 h1 {
@@ -167,31 +146,24 @@ h2.h2.concert-name {
     font-size: 2rem;
 }
 
-<<<<<<< HEAD
 span {
     color: var(--white);
 }
 
-=======
->>>>>>> origin/master
 /* CONTAINERS */
 
 .container {
-    max-width: 1200px;
-    padding: var(--container-padding);
-    margin: auto;
+  max-width: 1200px;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: var(--spacing-24);
 }
 
 .container.concert-info {
-<<<<<<< HEAD
   display: flex;
   gap: var(--spacing-12);
   flex-direction: row;
   justify-content: flex-start;
-=======
-    display: flex;
-    gap: var(--spacing-12);
->>>>>>> origin/master
 }
 
 .hero {
@@ -199,7 +171,7 @@ span {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 55vh;
+    min-height: 45vh;
 }
 
 .hero > * {
@@ -207,15 +179,12 @@ span {
     z-index: 1;
 }
 
-<<<<<<< HEAD
 .container-link {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-=======
->>>>>>> origin/master
 /* LISTAS */
 
 ul, li {
@@ -251,7 +220,6 @@ a:hover, a:focus {
     transition: all ease 0.9;
 }
 
-<<<<<<< HEAD
 a.btn {
     display: flex;
     align-items: center;
@@ -267,8 +235,6 @@ a.btn {
     text-decoration: none;
 }
 
-=======
->>>>>>> origin/master
 .nav-list a {
     color: var(--light-blue);
 }
@@ -318,7 +284,7 @@ header.concert-header { /* Cabecera del Concierto */
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
-  padding: 0 var(--spacing-24);
+  padding: 0;
 }
 
 .navbar.main-menu .nav-list {
@@ -401,12 +367,9 @@ header.concert-header { /* Cabecera del Concierto */
 /* CARDS */
 
 .card {
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     gap: var(--spacing-16);
-=======
->>>>>>> origin/master
     background-color: var(--dark-blue);
     padding: var(--card-padding);
     border: 1px solid var(--dark-blue);
@@ -425,18 +388,10 @@ header.concert-header { /* Cabecera del Concierto */
     }
 
 .card-picture img {
-<<<<<<< HEAD
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: var(--spacing-8);
-=======
-    width: 100%;
-    height: auto;
-    min-width: 100px;
-    min-height: 100px;
-    object-fit: cover;
->>>>>>> origin/master
 }
 
 .container .card {
@@ -449,17 +404,10 @@ header.concert-header { /* Cabecera del Concierto */
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     font-family: var(--font-family-text);
     font-size: var(--font-size-16);
     min-width: var(--btn-min-width);
     height: var(--btn-height);
-=======
-    font-family: var(--font-family);
-    font-size: var(--font-size-16);
-    min-width: var(--btn-min-width);
-    min-height: var(--btn-min-height);
->>>>>>> origin/master
     padding: var(--btn-padding);
     border: 1px solid transparent;
     border-radius: var(--btn-border-radius);
@@ -472,7 +420,6 @@ header.concert-header { /* Cabecera del Concierto */
   padding: var(--btn-list-padding);
   margin: 0;
   gap: var(--spacing-16);
-<<<<<<< HEAD
   align-items: center;
 }
 
@@ -485,8 +432,6 @@ header.concert-header { /* Cabecera del Concierto */
   justify-content: space-between;
   align-items: center;
   width: 100%;
-=======
->>>>>>> origin/master
 }
 
 .btn.btn-primary {
@@ -505,11 +450,7 @@ header.concert-header { /* Cabecera del Concierto */
 }
 
 .header .btn {
-<<<<<<< HEAD
     padding: var(--spacing-16);
-=======
-    height: var(--spacing-40);
->>>>>>> origin/master
     margin-right: 0;
 }
 
@@ -528,11 +469,7 @@ header.concert-header { /* Cabecera del Concierto */
 }
 
 .btn.btn-secondary p, .btn.btn-secondary a, .btn.btn-secondary span {
-<<<<<<< HEAD
     font-family: var(--font-family-text);
-=======
-    font-family: var(--font-family);
->>>>>>> origin/master
     font-weight: var(--bold);
 }
 
@@ -552,11 +489,7 @@ header.concert-header { /* Cabecera del Concierto */
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
     font-family: var(--font-family-text);
-=======
-    font-family: var(--font-family);
->>>>>>> origin/master
     font-size: var(--font-size-16);
     min-width: var(--btn-min-width);
     min-height: var(--btn-min-height);
@@ -569,7 +502,7 @@ section.tabs {
     display: flex;
     gap: var(--spacing-8);
     margin-bottom: var(--spacing-24);
-    padding: 0 var(--container-padding);
+    padding: 0;
 }
 
 /* INPUTS */
@@ -580,11 +513,7 @@ section.tabs {
     width: 100%;
     border: 1px solid var(--gray);
     border-radius: 8px; /* Hacer una variable del border-radius de los inputs */
-<<<<<<< HEAD
     font-family: var(--font-family-text);
-=======
-    font-family: var(--font-family);
->>>>>>> origin/master
     font-size: var(--font-size-14);
     padding: var(--spacing-4) var(--spacing-8);
     outline: none;
@@ -607,14 +536,9 @@ input[type="checkbox"] {
 
 .label { /* Label de los select */
   display: inline-block;
-<<<<<<< HEAD
   font-family: var(--font-family-text);
   font-size: var(--font-size-16);
   margin: 0 0 6px 0;
-=======
-  font-size: var(--font-size-16);
-  margin: 0;
->>>>>>> origin/master
   color: var(--white);
 }
 
@@ -628,25 +552,17 @@ input[type="checkbox"] {
 
 .container-input > label {
     margin-left: 0;
-<<<<<<< HEAD
     margin-bottom: 6px;
 }
 
 .select {
   font-family: var(--font-family-text);
-=======
-}
-
-.select {
-  font-family: var(--font-family);
->>>>>>> origin/master
   font-size: var(--font-size-14);
   color: var(--text-light-color);
   height: var(--btn-height);
   border-radius: var(--btn-border-radius);
 }
 
-<<<<<<< HEAD
 #category-select {
     height: 100%;
 }
@@ -663,8 +579,6 @@ input[type="checkbox"] {
 
 }
 
-=======
->>>>>>> origin/master
 .header select#idioma {
     font-size: var(--font-size-16);
     background-color: var(--dark-blue);
@@ -675,13 +589,8 @@ input[type="checkbox"] {
 }
 
 .option {
-<<<<<<< HEAD
     font-size: var(--font-size-16);
     font-family: var(--font-family-text);
-=======
-    font-size: 0.85rem;
-    font-family: var(--font-family);
->>>>>>> origin/master
 }
 
 .input-wrapper {
@@ -758,17 +667,10 @@ ul.nav-list.footer-list {
 /* FORMULARIOS */
 
 .legend {
-<<<<<<< HEAD
     font-size: var(--font-size-20);
     font-weight: var(--bold);
     color: var(--light-blue);
     margin-bottom: var(--spacing-16);
-=======
-    font-size: var(--font-size-16);
-    font-weight: var(--bold);
-    color: var(--light-blue);
-    margin-bottom: var(--spacing-8);
->>>>>>> origin/master
 }
 
 fieldset {
@@ -800,20 +702,12 @@ fieldset {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-16);
-<<<<<<< HEAD
     margin-left: var(--spacing-16);
 }
 
 img.concert-avatar {
     width: 200px;
     height: 200px;
-=======
-}
-
-img.concert-avatar {
-    width: 100px;
-    height: 100px;
->>>>>>> origin/master
     border-radius: 100%;
 }
 
@@ -833,7 +727,6 @@ img.concert-avatar {
   border: 0;
 }
 
-<<<<<<< HEAD
 .concert-img {
   width: auto;
   height: 200px;
@@ -851,9 +744,6 @@ img.concert-avatar {
   flex-direction: column;
   justify-content: space-between;
 }
-=======
-
->>>>>>> origin/master
 
 /* MEDIA QUERIES */
 
@@ -1008,11 +898,7 @@ img.concert-avatar {
 
 .btn-list {
     flex-direction: column;
-<<<<<<< HEAD
     padding-top: var(--spacing-16);
-=======
-    padding-top: var(--spacing-0);
->>>>>>> origin/master
 }
 
 .btn-list .list-item {
