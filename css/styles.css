@@ -719,8 +719,9 @@ fieldset {
 }
 
 img.concert-avatar {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    height: auto;
+    min-width: 40px;
     border-radius: 100%;
 }
 
@@ -741,8 +742,9 @@ img.concert-avatar {
 }
 
 .concert-img {
-  width: auto;
-  height: 200px;
+  height: auto;
+  max-width: 200px;
+  min-width: 40px;
   object-fit: cover;
   border-radius: var(--card-border-radius);
 }
