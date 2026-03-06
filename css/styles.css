@@ -172,7 +172,10 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 45vh;
+    margin-top: 0;
+    padding-top: var(--spacing-24);
 }
+
 
 .hero > * {
     position: relative;
@@ -304,6 +307,12 @@ header.concert-header { /* Cabecera del Concierto */
     width: auto;
     left: -6px;
     position: relative;
+}
+
+#logo-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .menu-icon img {
@@ -442,7 +451,7 @@ header.concert-header { /* Cabecera del Concierto */
     border-radius: var(--btn-border-radius);
 
     &:hover, &:focus {
-        background-color: transparent;
+        background-color: var(--dark-blue);
         color: var(--orange);
         transition: all ease 0.8;
         border-color: var(--dark-orange);
@@ -455,7 +464,7 @@ header.concert-header { /* Cabecera del Concierto */
 }
 
 .btn.btn-secondary {
-    background-color: transparent;
+    background-color: var(--dark-blue);
     padding: var(--btn-padding);
     color: var(--btn-text-secondary);
     border: var(--btn-border-secondary);
